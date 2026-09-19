@@ -1,0 +1,49 @@
+name: spendo_app
+description: SPENDO - Personal Finance Tracker แอปจัดการเงินส่วนตัว
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # UI & Fonts
+  google_fonts: ^6.1.0
+  fl_chart: ^0.65.0
+  
+  # Utilities
+  intl: ^0.18.1
+  cupertino_icons: ^1.0.2
+  uuid: ^4.2.1
+  shared_preferences: ^2.2.2
+  
+  # State management
+  provider: ^6.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+
+  fonts:
+    - family: NotoSansThai
+      fonts:
+        - asset: assets/fonts/NotoSansThai-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansThai-Black.ttf
+          weight: 900

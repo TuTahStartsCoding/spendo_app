@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="SPENDO - แอปจัดการเงินส่วนตัว บันทึกรายรับ-รายจ่าย วางงบประมาณ ดูรายงาน">
+  <meta name="theme-color" content="#00C853">
+
+  <!-- PWA Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SPENDO">
+  <meta name="application-name" content="SPENDO">
+  <meta name="msapplication-TileColor" content="#00C853">
+
+  <!-- iOS Icons (ต้องสร้างไฟล์เหล่านี้ด้วย) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-maskable-192.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <title>SPENDO - จัดการเงินส่วนตัว</title>
+
+  <style>
+    /* Splash / loading styles before Flutter renders */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #00C853 0%, #00897B 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: sans-serif;
+    }
+    #flutter-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      color: white;
+    }
+    #flutter-loading .logo {
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+    }
+    #flutter-loading h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+    #flutter-loading p { margin: 0; opacity: 0.8; }
+    .spinner {
+      width: 32px; height: 32px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    flt-glass-pane { display: block; }
+  </style>
+</head>
+<body>
+  <!-- Loading placeholder (hidden once Flutter loads) -->
+  <div id="flutter-loading">
+    <div class="logo">💰</div>
+    <h1>SPENDO</h1>
+    <p>จัดการเงินอย่างชาญฉลาด</p>
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    // Hide loading screen once Flutter is ready
+    window.addEventListener('flutter-first-frame', function() {
+      var loading = document.getElementById('flutter-loading');
+      if (loading) {
+        loading.style.opacity = '0';
+        loading.style.transition = 'opacity 0.5s';
+        setTimeout(function() { loading.style.display = 'none'; }, 500);
+      }
+    });
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

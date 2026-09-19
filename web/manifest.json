@@ -1,0 +1,56 @@
+{
+    "name": "SPENDO - จัดการเงินส่วนตัว",
+    "short_name": "SPENDO",
+    "description": "แอปจัดการเงินส่วนตัว บันทึกรายรับ-รายจ่าย วางงบประมาณ ดูรายงาน",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#00C853",
+    "theme_color": "#00C853",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "lang": "th",
+    "categories": ["finance", "productivity"],
+    "screenshots": [],
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "เพิ่มรายจ่าย",
+            "short_name": "รายจ่าย",
+            "description": "บันทึกรายจ่ายใหม่",
+            "url": "/?action=expense",
+            "icons": [{"src": "icons/Icon-192.png", "sizes": "192x192"}]
+        },
+        {
+            "name": "เพิ่มรายรับ",
+            "short_name": "รายรับ",
+            "description": "บันทึกรายรับใหม่",
+            "url": "/?action=income",
+            "icons": [{"src": "icons/Icon-192.png", "sizes": "192x192"}]
+        }
+    ]
+}
