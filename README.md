@@ -311,7 +311,7 @@ flutter analyze
 ```
 ---
 ##  Current Limitations
-SPENDO เป็นโปรเจกต์เพื่อการเรียนรู้และ Portfolio จึงมีข้อจำกัดบางประการ:
+SPENDO เป็นโปรเจกต์เพื่อการเรียนรู้จึงมีข้อจำกัดบางประการ:
 1. Login เป็น local flow ไม่ใช่ server-side authentication
 2. ข้อมูลถูกจัดเก็บภายในอุปกรณ์เป็นหลัก
 3. ยังไม่มี Cloud Sync
@@ -375,7 +375,7 @@ git push origin feature/your-feature
 ---
 ##  Project Context
 **Project:** SPENDO
-**Type:** School Project / Portfolio
+**Type:** School Project
 **Course context:** รายวิชาพัฒนาแอปพลิเคชัน
 **Education level:** มัธยมศึกษาปีที่ 5
 **Semester:** ภาคเรียนที่ 1
