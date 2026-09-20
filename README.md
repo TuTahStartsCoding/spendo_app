@@ -4,7 +4,7 @@
 [![Dart](https://img.shields.io/badge/Dart-%3E%3D3.0.0-0175C2?logo=dart&logoColor=white)](https://dart.dev/)
 [![Version](https://img.shields.io/badge/version-2.0.0%2B1-informational)](https://github.com/TuTahStartsCoding/spendo_app)
 **SPENDO** เป็นโปรเจกต์รายวิชาพัฒนาแอปพลิเคชันในระดับมัธยมศึกษาปีที่ 5 ภาคเรียนที่ 1 โดยมีแนวคิดจากปัญหาใกล้ตัว คือการติดตามว่าในแต่ละวันมีรายรับและรายจ่ายอะไรบ้าง และต้องการให้ผู้ใช้สามารถมองเห็นภาพรวมของการเงินของตนเองได้ง่ายขึ้น
-โปรเจกต์นี้ถูกพัฒนาขึ้นเพื่อการเรียนรู้และเป็นผลงานสำหรับ Portfolio โดยปัจจุบันเน้นการทำงานแบบ **Local-first / Local-only** และยังไม่ได้เชื่อมต่อระบบ Cloud หรือบริการ Backend ภายนอก
+โปรเจกต์นี้ถูกพัฒนาขึ้นเพื่อการเรียนรู้ โดยปัจจุบันเน้นการทำงานแบบ **Local-first / Local-only** และยังไม่ได้เชื่อมต่อระบบ Cloud หรือบริการ Backend ภายนอก
 > **Project status:** Functional prototype / School project
 >
 > ฟีเจอร์และแพลตฟอร์มบางส่วนยังไม่ได้ผ่านการทดสอบอย่างเป็นทางการทุกสภาพแวดล้อม
